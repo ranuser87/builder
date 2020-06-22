@@ -1,0 +1,19 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" href="fonts/fonts.css")
+		link(rel="stylesheet" href="styles/app.css")
+	body
+		include layout/header.pug
+		main
+			.container
+				.it
+					svg
+						use(xlink:href="images/vector/sprites/svg/symbols.svg#bird")
+				p.
+					#{globals.sitename}
+				img(src="images/raster/autumn-forest1.jpg" width="400" height="260")
+		include layout/footer.pug
+		script(src="scripts/app.js")
